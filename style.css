@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.vertical-menu {
+    width: 200px; /* Width of the menu */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #000; /* Black background */
+    padding-top: 20px; /* Padding at the top */
+}
+
+.vertical-menu a {
+    display: block; /* Make the links appear below each other */
+    color: white; /* White text color */
+    padding: 15px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Increase font size */
+    text-align: center; /* Center the text */
+}
+
+.vertical-menu a:hover {
+    background-color: #333; /* Dark grey background on hover */
+}
