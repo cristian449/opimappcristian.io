@@ -1,31 +1,111 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('Png.png'); /* Replace with your image file */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
 }
 
 header {
-    background: black;
+    background: darkslategray;
     color: white;
     text-align: center;
     padding: 10px;
 }
 
+footer {
+    background: darkslategray;
+    color: white;
+    padding: 1px;
+    position: fixed;
+    width: 200%;
+    bottom: 0;
+}
+
 .vertical-menu {
-    width: 200px; /* Width of the menu */
+    width: 300px; /* Width of the menu */
     height: 100vh; /* Full height of the viewport */
-    background-color: #000; /* Black background */
-    padding-top: 20px; /* Padding at the top */
+    background-color: hwb(104 2% 94% / 0.824); /* Black background */
+    padding: 10px; /* Padding around the menu */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
 .vertical-menu a {
     display: block; /* Make the links appear below each other */
-    color: white; /* White text color */
+    color: #000; /* Black text color */
+    background-color: #236b1c9e; /* White background for buttons */
     padding: 15px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
     font-size: 18px; /* Increase font size */
     text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Space between buttons */
+    border-radius: 155px; /* Rounded corners for buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
 .vertical-menu a:hover {
     background-color: #333; /* Dark grey background on hover */
+    color: #fff; /* White text on hover */
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0; /* Position below the dropdown button */
+    left: 100%; /* Position to the right of the dropdown button */
+    background-color: #101010; /* Black background for dropdown */
+    min-width: 160px; /* Minimum width of dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fe0000; /* White text */
+    background-color: #473a3a; /* Dark grey background */
+    padding: 12px 16px; /* Padding for dropdown links */
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 0; /* Remove margin for dropdown links */
+    border-radius: 0; /* Remove rounded corners for dropdown links */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #555; /* Lighter grey on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.mina {
+    position: absolute; /* Or use relative if needed */
+    left: 400px; /* Adjust according to layout */
+    top: 100px; /* Adjust to place it correctly */
+    color: bisque; /* Change text color if necessary */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.main-content {
+    margin-left: 200px; /* Adjust as per sidebar width */
+    padding: 20px;
+    text-align: center;
+    font-size: large;
 }
